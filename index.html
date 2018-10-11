@@ -75,19 +75,19 @@
 
 
 
-<meta name="description" content="目录 iOS12 无法获取WiFi的SSID  iOS12 无法获取WiFi的SSID简述:SSID全称Service Set IDentifier, 即Wifi网络的公开名称.在IOS 4.1以上版本提供了公开的方法来获取该信息.以下是获取SSID的代码:1234567891011+ (NSString *)wifiSSID &amp;#123;     NSString *ssid = nil;">
+<meta name="description" content="摘要: 开发中遇到的问题汇总,包含解决方案,查漏补缺">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试题目">
+<meta property="og:title" content="开发中遇到的问题汇总">
 <meta property="og:url" content="http://yoursite.com/2018/10/11/hellow-world/index.html">
 <meta property="og:site_name" content="GyennoiOSTeam">
-<meta property="og:description" content="目录 iOS12 无法获取WiFi的SSID  iOS12 无法获取WiFi的SSID简述:SSID全称Service Set IDentifier, 即Wifi网络的公开名称.在IOS 4.1以上版本提供了公开的方法来获取该信息.以下是获取SSID的代码:1234567891011+ (NSString *)wifiSSID &amp;#123;     NSString *ssid = nil;">
+<meta property="og:description" content="摘要: 开发中遇到的问题汇总,包含解决方案,查漏补缺">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/pengfan123/images/master/ios12-WiFi%20Access.png">
-<meta property="og:updated_time" content="2018-10-11T08:17:26.864Z">
+<meta property="og:updated_time" content="2018-10-11T08:49:43.228Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测试题目">
-<meta name="twitter:description" content="目录 iOS12 无法获取WiFi的SSID  iOS12 无法获取WiFi的SSID简述:SSID全称Service Set IDentifier, 即Wifi网络的公开名称.在IOS 4.1以上版本提供了公开的方法来获取该信息.以下是获取SSID的代码:1234567891011+ (NSString *)wifiSSID &amp;#123;     NSString *ssid = nil;">
+<meta name="twitter:title" content="开发中遇到的问题汇总">
+<meta name="twitter:description" content="摘要: 开发中遇到的问题汇总,包含解决方案,查漏补缺">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/pengfan123/images/master/ios12-WiFi%20Access.png">
 
 
@@ -253,7 +253,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/10/11/hellow-world/" itemprop="url">测试题目</a></h1>
+                <a class="post-title-link" href="/2018/10/11/hellow-world/" itemprop="url">开发中遇到的问题汇总</a></h1>
         
 
         <div class="post-meta">
@@ -302,16 +302,14 @@
 
       
         
-          
-            <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
-<li><a href="#chapter-1">iOS12 无法获取WiFi的SSID</a></li>
-</ul>
-<h3 id="iOS12-无法获取WiFi的SSID"><a href="#iOS12-无法获取WiFi的SSID" class="headerlink" title="iOS12 无法获取WiFi的SSID"></a><span id="chapter-1">iOS12 无法获取WiFi的SSID</span></h3><p>简述:<br>SSID全称Service Set IDentifier, 即Wifi网络的公开名称.在IOS 4.1以上版本提供了公开的方法来获取该信息.<br>以下是获取SSID的代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">+ (NSString *)wifiSSID &#123;</span><br><span class="line">     NSString *ssid = nil;</span><br><span class="line">     NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();</span><br><span class="line">     for (NSString *ifnam in ifs) &#123;</span><br><span class="line">     NSDictionary *info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);</span><br><span class="line">     if (info[@&quot;SSID&quot;]) &#123;</span><br><span class="line">       ssid = info[@&quot;SSID&quot;];</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;</span><br><span class="line">     return ssid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>但是升级Xcode10之后,编译APP运行在iOS12系统的设备上,发现获取的SSID为nil.这里猜想可能是CNCopyCurrentNetworkInfo()方法在iOS12发生了改变.选中方法,查看文档,如下图:  </p>
-<p><img src="https://raw.githubusercontent.com/pengfan123/images/master/ios12-WiFi%20Access.png" alt="iOS12 无法获取WiFi的SSID"></p>
-<p>解决方法: 按照如图所示,我们按照Target-&gt;capabilities-&gt;Access WiFi Information,把这个选项打开,然后登陆苹果开发者中心,为APP ID 添加 Access WiFi Information功能,然后更新provision file,重新下载安装provision file,编译项目运行,这时就可以获取WiFi的SSID了.</p>
-
-          
+          <p>摘要:<br> 开发中遇到的问题汇总,包含解决方案,查漏补缺</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/11/hellow-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
