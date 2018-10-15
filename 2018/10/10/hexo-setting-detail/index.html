@@ -75,20 +75,18 @@
 
 
 
-<meta name="description" content="摘要: 开发中遇到的问题汇总,包含解决方案,查漏补缺">
+<meta name="description" content="摘要:cocoapods创建私有化仓库">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开发中遇到的问题汇总">
-<meta property="og:url" content="http://yoursite.com/2018/10/11/hellow-world/index.html">
+<meta property="og:title" content="cocoapods-private-spec">
+<meta property="og:url" content="http://yoursite.com/2018/10/14/cocoapods-private-spec/index.html">
 <meta property="og:site_name" content="GyennoiOSTeam">
-<meta property="og:description" content="摘要: 开发中遇到的问题汇总,包含解决方案,查漏补缺">
+<meta property="og:description" content="摘要:cocoapods创建私有化仓库">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/pengfan123/images/master/ios12-WiFi%20Access.png">
-<meta property="og:updated_time" content="2018-10-11T08:49:43.228Z">
+<meta property="og:updated_time" content="2018-10-15T01:20:15.588Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="开发中遇到的问题汇总">
-<meta name="twitter:description" content="摘要: 开发中遇到的问题汇总,包含解决方案,查漏补缺">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/pengfan123/images/master/ios12-WiFi%20Access.png">
+<meta name="twitter:title" content="cocoapods-private-spec">
+<meta name="twitter:description" content="摘要:cocoapods创建私有化仓库">
 
 
 
@@ -120,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/11/hellow-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/14/cocoapods-private-spec/"/>
 
 
 
@@ -278,6 +276,17 @@
 
           
           
+             <span id="/2018/10/10/hexo-setting-detail/" class="leancloud_visitors" data-flag-title="Hexo 和 Next 主题构建 GitHub 的 Blog">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">博主&#58;</span>
+               
+                 <span class="leancloud-visitors-count">lmsss</span>
+             </span>
+          
 
           
 
@@ -329,6 +338,27 @@
 <h5 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h5><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p>此时即可使用浏览器访问 <a href="http://localhost:4000，检查站点是否正确运行。" target="_blank" rel="noopener">http://localhost:4000，检查站点是否正确运行。</a></p>
 <h4 id="Next-主题"><a href="#Next-主题" class="headerlink" title="Next 主题"></a>Next 主题</h4><h5 id="主题结构"><a href="#主题结构" class="headerlink" title="主题结构"></a>主题结构</h5><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">├── .github            <span class="meta">#git信息</span></span><br><span class="line">├── languages          <span class="meta">#多语言</span></span><br><span class="line">|   ├── <span class="keyword">default</span>.yml    <span class="meta">#默认语言</span></span><br><span class="line">|   └── zh-Hans.yml      <span class="meta">#简体中文</span></span><br><span class="line">|   └── zh-tw.yml      <span class="meta">#繁体中文</span></span><br><span class="line">├── layout             <span class="meta">#布局，根目录下的*.ejs文件是对主页，分页，存档等的控制</span></span><br><span class="line">|   ├── _custom        <span class="meta">#可以自己修改的模板，覆盖原有模板</span></span><br><span class="line">|   |   ├── _header.swig    <span class="meta">#头部样式</span></span><br><span class="line">|   |   ├── _sidebar.swig   <span class="meta">#侧边栏样式</span></span><br><span class="line">|   ├── _macro        <span class="meta">#可以自己修改的模板，覆盖原有模板</span></span><br><span class="line">|   |   ├── post.swig    <span class="meta">#文章模板</span></span><br><span class="line">|   |   ├── reward.swig    <span class="meta">#打赏模板</span></span><br><span class="line">|   |   ├── sidebar.swig   <span class="meta">#侧边栏模板</span></span><br><span class="line">|   ├── _partial       <span class="meta">#局部的布局</span></span><br><span class="line">|   |   ├── head       <span class="meta">#头部模板</span></span><br><span class="line">|   |   ├── search     <span class="meta">#搜索模板</span></span><br><span class="line">|   |   ├── share      <span class="meta">#分享模板</span></span><br><span class="line">|   ├── _script        <span class="meta">#局部的布局</span></span><br><span class="line">|   ├── _third-party   <span class="meta">#第三方模板</span></span><br><span class="line">|   ├── _layout.swig   <span class="meta">#主页面模板</span></span><br><span class="line">|   ├── index.swig     <span class="meta">#主页面模板</span></span><br><span class="line">|   ├── page           <span class="meta">#页面模板</span></span><br><span class="line">|   └── tag.swig       <span class="meta">#tag模板</span></span><br><span class="line">├── scripts            <span class="meta">#script源码</span></span><br><span class="line">|   ├── tags           <span class="meta">#tags的script源码</span></span><br><span class="line">|   ├── marge.js       <span class="meta">#页面模板</span></span><br><span class="line">├── source             <span class="meta">#源码</span></span><br><span class="line">|   ├── css            <span class="meta">#css源码</span></span><br><span class="line">|   |   ├── _common    <span class="meta">#*.styl基础css</span></span><br><span class="line">|   |   ├── _custom    <span class="meta">#*.styl局部css</span></span><br><span class="line">|   |   └── _mixins    <span class="meta">#mixins的css</span></span><br><span class="line">|   ├── fonts          <span class="meta">#字体</span></span><br><span class="line">|   ├── images         <span class="meta">#图片</span></span><br><span class="line">|   ├── uploads        <span class="meta">#添加的文件</span></span><br><span class="line">|   └── js             <span class="meta">#javascript源代码</span></span><br><span class="line">├── _config.yml        <span class="meta">#主题配置文件</span></span><br><span class="line">└── README.md          <span class="meta">#用GitHub的都知道</span></span><br></pre></td></tr></table></figure>
+<h5 id="选定Scheme"><a href="#选定Scheme" class="headerlink" title="选定Scheme"></a>选定Scheme</h5><p>目前Next 支持三种 Scheme </p>
+<ul>
+<li>Muse - 默认的Scheme </li>
+<li>Mist-Muse 紧凑版本，整洁有序的单栏外观</li>
+<li>Pisces - 双栏Scheme </li>
+</ul>
+<p>Scheme 的切换可以通过<strong> 主题配置文件 </strong> 中的Scheme 来进行配置：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta"># Schemes</span></span><br><span class="line"><span class="meta">#scheme: Muse</span></span><br><span class="line">scheme: Mist</span><br><span class="line"><span class="meta">#scheme: Pisces</span></span><br><span class="line"><span class="meta">#scheme: Gemini</span></span><br></pre></td></tr></table></figure>
+<p>如果要使用只要加上注释就可以了  # </p>
+<h5 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h5><p>需要在站点的配置文件中将 language 设置成你所需要的语言</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-Hans</span><br></pre></td></tr></table></figure>
+<h5 id="修改底部带-号的标签"><a href="#修改底部带-号的标签" class="headerlink" title="修改底部带#号的标签"></a>修改底部带#号的标签</h5><p>具体的办法：<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">修改模板/themes/next/layout/_macro/post.swig，搜索 rel=<span class="string">"tag"</span>&gt;<span class="meta">#，将 # 换成 <span class="meta-string">&lt;i class="fa fa-tag"&gt;</span><span class="meta-string">&lt;/i&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<h5 id="在每篇文章末尾统一添加“结束”标记"><a href="#在每篇文章末尾统一添加“结束”标记" class="headerlink" title="在每篇文章末尾统一添加“结束”标记"></a>在每篇文章末尾统一添加“结束”标记</h5><p>在路径 \themes\next\layout_macro 中新建一个 passage-end-tag.swig 文件，并添加内容</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">&#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">&lt;div style="text-align:center;color: #ccc;font-size:14px;"&gt;-------------本文结束&lt;i class="fa fa-paw"&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>然后需要将这个文件添加到 ‘\themes\next\layout_macro\post.swig’ 文件中，在post-body 之后，post-footer 之前添加如下部分</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">&#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">&#123;% include 'passage-end-tag.swig' %&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>然后在主题配置文件’_config.yml’ 的末尾添加</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 文章末尾添加“本文结束”标记</span></span><br><span class="line">passage_end_tag:</span><br><span class="line">enabled: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>这些完成以后，就可以 ‘hexo s’预览下</p>
+<h5 id="主页文章添加阴影效果"><a href="#主页文章添加阴影效果" class="headerlink" title="主页文章添加阴影效果"></a>主页文章添加阴影效果</h5><p>打开\themes\next\source\css_custom\custom.styl,向里面加入：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.post &#123;</span><br><span class="line"> margin-top: <span class="number">60</span>px;</span><br><span class="line"> margin-bottom: <span class="number">60</span>px;</span><br><span class="line"> padding: <span class="number">25</span>px;</span><br><span class="line"> -webkit-box-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">5</span>px rgba(<span class="number">202</span>, <span class="number">203</span>, <span class="number">203</span>, <span class="number">.5</span>);</span><br><span class="line"> -moz-box-shadow: <span class="number">0</span> <span class="number">0</span> <span class="number">5</span>px rgba(<span class="number">202</span>, <span class="number">203</span>, <span class="number">204</span>, <span class="number">.5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="修改文章的字体的大小"><a href="#修改文章的字体的大小" class="headerlink" title="修改文章的字体的大小"></a>修改文章的字体的大小</h5><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">global:</span><br><span class="line">external: <span class="literal">true</span></span><br><span class="line">family: Lato</span><br><span class="line">size: <span class="number">16</span></span><br></pre></td></tr></table></figure>
 <p>这里可以修改字体的大小操作</p>
 <h5 id="增加文章底部版权信息"><a href="#增加文章底部版权信息" class="headerlink" title="增加文章底部版权信息"></a>增加文章底部版权信息</h5><p>首先要再主题文件中设置<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">post_copyright:</span><br><span class="line">enable: <span class="literal">true</span></span><br><span class="line">license: CC BY-NC-SA <span class="number">3.0</span></span><br><span class="line">license_url: https:<span class="comment">//creativecommons.org/licenses/by-nc-sa/3.0/</span></span><br></pre></td></tr></table></figure></p>
@@ -349,6 +379,11 @@
 
     
 
+<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
     <footer class="post-footer">
       
 
@@ -445,7 +480,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -482,7 +517,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Node-js-的安装"><span class="nav-number">1.</span> <span class="nav-text">Node.js 的安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-的安装"><span class="nav-number">2.</span> <span class="nav-text">Hexo 的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hexo-的初始化"><span class="nav-number">2.1.</span> <span class="nav-text">Hexo 的初始化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Hexo-的框架简介"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo 的框架简介</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Hexo-命令简介"><span class="nav-number">2.3.</span> <span class="nav-text">Hexo 命令简介</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-配置"><span class="nav-number">3.</span> <span class="nav-text">Hexo 配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#语言-时区"><span class="nav-number">3.1.</span> <span class="nav-text">语言 时区</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo-到-GitHub"><span class="nav-number">3.2.</span> <span class="nav-text">hexo 到 GitHub</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo-主题设置"><span class="nav-number">3.3.</span> <span class="nav-text">hexo 主题设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#验证主题"><span class="nav-number">3.4.</span> <span class="nav-text">验证主题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Next-主题"><span class="nav-number">4.</span> <span class="nav-text">Next 主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#主题结构"><span class="nav-number">4.1.</span> <span class="nav-text">主题结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改文章的字体的大小"><span class="nav-number">4.2.</span> <span class="nav-text">修改文章的字体的大小</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#增加文章底部版权信息"><span class="nav-number">4.3.</span> <span class="nav-text">增加文章底部版权信息</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Node-js-的安装"><span class="nav-number">1.</span> <span class="nav-text">Node.js 的安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-的安装"><span class="nav-number">2.</span> <span class="nav-text">Hexo 的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hexo-的初始化"><span class="nav-number">2.1.</span> <span class="nav-text">Hexo 的初始化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Hexo-的框架简介"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo 的框架简介</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Hexo-命令简介"><span class="nav-number">2.3.</span> <span class="nav-text">Hexo 命令简介</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo-配置"><span class="nav-number">3.</span> <span class="nav-text">Hexo 配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#语言-时区"><span class="nav-number">3.1.</span> <span class="nav-text">语言 时区</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo-到-GitHub"><span class="nav-number">3.2.</span> <span class="nav-text">hexo 到 GitHub</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo-主题设置"><span class="nav-number">3.3.</span> <span class="nav-text">hexo 主题设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#验证主题"><span class="nav-number">3.4.</span> <span class="nav-text">验证主题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Next-主题"><span class="nav-number">4.</span> <span class="nav-text">Next 主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#主题结构"><span class="nav-number">4.1.</span> <span class="nav-text">主题结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#选定Scheme"><span class="nav-number">4.2.</span> <span class="nav-text">选定Scheme</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#设置语言"><span class="nav-number">4.3.</span> <span class="nav-text">设置语言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改底部带-号的标签"><span class="nav-number">4.4.</span> <span class="nav-text">修改底部带#号的标签</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在每篇文章末尾统一添加“结束”标记"><span class="nav-number">4.5.</span> <span class="nav-text">在每篇文章末尾统一添加“结束”标记</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#主页文章添加阴影效果"><span class="nav-number">4.6.</span> <span class="nav-text">主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改文章的字体的大小"><span class="nav-number">4.7.</span> <span class="nav-text">修改文章的字体的大小</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#增加文章底部版权信息"><span class="nav-number">4.8.</span> <span class="nav-text">增加文章底部版权信息</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -662,6 +697,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
