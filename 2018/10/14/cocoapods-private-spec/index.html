@@ -64,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="组件化," />
 
 
 
@@ -76,16 +76,16 @@
 
 
 <meta name="description" content="摘要:cocoapods创建私有化仓库">
-<meta name="keywords" content="iOS">
+<meta name="keywords" content="组件化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cocoapods-private-spec">
+<meta property="og:title" content="cocoapods创建私有化仓库">
 <meta property="og:url" content="http://yoursite.com/2018/10/14/cocoapods-private-spec/index.html">
 <meta property="og:site_name" content="GyennoiOSTeam">
 <meta property="og:description" content="摘要:cocoapods创建私有化仓库">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-15T01:20:15.588Z">
+<meta property="og:updated_time" content="2018-10-15T06:39:45.333Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cocoapods-private-spec">
+<meta name="twitter:title" content="cocoapods创建私有化仓库">
 <meta name="twitter:description" content="摘要:cocoapods创建私有化仓库">
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <title>cocoapods-private-spec | GyennoiOSTeam</title>
+  <title>cocoapods创建私有化仓库 | GyennoiOSTeam</title>
   
 
 
@@ -248,7 +248,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">cocoapods-private-spec</h1>
+          <h1 class="post-title" itemprop="name headline">cocoapods创建私有化仓库</h1>
         
 
         <div class="post-meta">
@@ -276,7 +276,7 @@
 
           
           
-             <span id="/2018/10/14/cocoapods-private-spec/" class="leancloud_visitors" data-flag-title="cocoapods-private-spec">
+             <span id="/2018/10/14/cocoapods-private-spec/" class="leancloud_visitors" data-flag-title="cocoapods创建私有化仓库">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -354,8 +354,8 @@
 </blockquote>
 <h5 id="使用私有仓库代码"><a href="#使用私有仓库代码" class="headerlink" title="使用私有仓库代码"></a>使用私有仓库代码</h5><p>这个时候,开发团队的其他成员就可以通过cocoapods来导入你编写的组件了. 在podfile文件中添加如下代码:<br>‘’’<br>source ‘<a href="https://git.coding.net/LiuXiaoZhuang/HomePageModuleSpec.git&#39;" target="_blank" rel="noopener">https://git.coding.net/LiuXiaoZhuang/HomePageModuleSpec.git&#39;</a></p>
 <p>target ‘MainProject’ do</p>
-<h1 id="第三方库"><a href="#第三方库" class="headerlink" title="第三方库"></a>第三方库</h1><p>pod ‘Masonry’<br>pod ‘MGJRouter’</p>
-<h1 id="私有仓库"><a href="#私有仓库" class="headerlink" title="私有仓库"></a>私有仓库</h1><p>pod ‘TestLib’,   ‘~&gt; 0.0.1’<br>end<br>‘’’</p>
+<p>#第三方库<br>pod ‘Masonry’<br>pod ‘MGJRouter’</p>
+<p>#私有仓库<br>pod ‘TestLib’,   ‘~&gt; 0.0.1’<br>end<br>‘’’</p>
 <p>在配置好这套环境后，之后的开发就只需提交代码,然后执行pod repo push的操作。根据业务需求发布指定的组件版本，并将对应版本的podspec文件push到Spec私有仓库即可。</p>
 <p>版本控制也非常简单，只需要在Podfile中指定某个私有仓库的版本号即可。</p>
 
@@ -377,6 +377,12 @@
     
 </div>
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/组件化/" rel="tag"><i class="fa fa-tag"></i> 组件化</a>
+          
+        </div>
       
 
       
@@ -481,6 +487,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
 
           </nav>
 
@@ -509,7 +524,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#cocoapods创建私有化仓库"><span class="nav-number">1.</span> <span class="nav-text">cocoapods创建私有化仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建私有代码仓库和spec仓库"><span class="nav-number">1.2.</span> <span class="nav-text">创建私有代码仓库和spec仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-创建私有代码仓库"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.创建私有代码仓库</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-创建私有spec仓库"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. 创建私有spec仓库</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#搭建环境"><span class="nav-number">1.3.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#创建podspec文件"><span class="nav-number">1.3.1.</span> <span class="nav-text">创建podspec文件</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#关联podspec到spec私有仓库"><span class="nav-number">1.3.2.</span> <span class="nav-text">关联podspec到spec私有仓库</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#为TestLib添加tag"><span class="nav-number">1.3.3.</span> <span class="nav-text">为TestLib添加tag</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#提交podspec文件到远程spec仓库"><span class="nav-number">1.3.4.</span> <span class="nav-text">提交podspec文件到远程spec仓库</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用私有仓库代码"><span class="nav-number">1.4.</span> <span class="nav-text">使用私有仓库代码</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三方库"><span class="nav-number"></span> <span class="nav-text">第三方库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#私有仓库"><span class="nav-number"></span> <span class="nav-text">私有仓库</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#cocoapods创建私有化仓库"><span class="nav-number">1.</span> <span class="nav-text">cocoapods创建私有化仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建私有代码仓库和spec仓库"><span class="nav-number">1.2.</span> <span class="nav-text">创建私有代码仓库和spec仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-创建私有代码仓库"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.创建私有代码仓库</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-创建私有spec仓库"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. 创建私有spec仓库</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#搭建环境"><span class="nav-number">1.3.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#创建podspec文件"><span class="nav-number">1.3.1.</span> <span class="nav-text">创建podspec文件</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#关联podspec到spec私有仓库"><span class="nav-number">1.3.2.</span> <span class="nav-text">关联podspec到spec私有仓库</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#为TestLib添加tag"><span class="nav-number">1.3.3.</span> <span class="nav-text">为TestLib添加tag</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#提交podspec文件到远程spec仓库"><span class="nav-number">1.3.4.</span> <span class="nav-text">提交podspec文件到远程spec仓库</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用私有仓库代码"><span class="nav-number">1.4.</span> <span class="nav-text">使用私有仓库代码</span></a></li></ol></li></ol></div>
             
 
           </div>
